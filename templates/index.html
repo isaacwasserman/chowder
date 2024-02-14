@@ -1,0 +1,37 @@
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="image">
+
+    <br/>
+
+    <label for="regions_per_frame">How many regions should be swapped/shown per frame?</label>
+    <input type="number" name="regions_per_frame" value="1">
+
+    <br/>
+
+    <label for="regions_considered">Consider how many of the largest regions?</label>
+    <input type="number" name="regions_considered" value="10">
+
+    <br/>
+
+    <label for="number_of_frames">How many frames?</label>
+    <input type="number" name="number_of_frames" value="5">
+
+    <br/>
+
+    <label for="frames_per_second">How many frames per second?</label>
+    <input type="number" name="frames_per_second" value="3">
+
+    <br/>
+
+    <fieldset>
+        <legend>Task</legend>
+        <input type="radio" id="scramble" name="task" value="scramble" checked />
+        <label for="scramble">Scramble</label>
+
+        <input type="radio" id="reveal" name="task" value="reveal" />
+        <label for="reveal">Reveal</label>
+    </fieldset>
+    
+
+    <input type="submit">
+</form>
